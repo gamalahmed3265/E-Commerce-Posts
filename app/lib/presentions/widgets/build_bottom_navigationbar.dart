@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-import '../pages/views/home_page.dart';
+import '../controller/provider.dart';
 import '../resourcce/theme_manager.dart';
 
 BottomNavigationBar buildBottomNavigationBar(int currentIndex, WidgetRef ref) {

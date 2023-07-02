@@ -23,13 +23,7 @@ class ProductCardWidget extends ConsumerWidget {
       decoration: BoxDecoration(
         color: kWhiteColor,
         borderRadius: BorderRadius.circular(8),
-        boxShadow: [
-          BoxShadow(
-              offset: const Offset(0, 6),
-              color: Colors.black.withOpacity(0.1),
-              blurRadius: 8,
-              spreadRadius: 2),
-        ],
+        boxShadow: [boxShadow],
       ),
       margin: const EdgeInsets.all(12),
       width: MediaQuery.of(context).size.width * 0.5,

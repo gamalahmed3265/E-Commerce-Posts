@@ -7,6 +7,12 @@ const kLightBackground = Color(0xFFE8F6FB);
 const kWhiteColor = Colors.white;
 const kBlackColor = Colors.black;
 
+final BoxShadow boxShadow = BoxShadow(
+    offset: const Offset(0, 6),
+    color: Colors.black.withOpacity(0.1),
+    blurRadius: 8,
+    spreadRadius: 2);
+
 class AppTheme {
   static const kBigTitle = TextStyle(
     color: kWhiteColor,

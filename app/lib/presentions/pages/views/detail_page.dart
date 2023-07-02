@@ -1,9 +1,9 @@
-import 'package:app/presentions/pages/views/home_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_rating_bar/flutter_rating_bar.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:gap/gap.dart';
 
+import '../../controller/provider.dart';
 import '../../resourcce/theme_manager.dart';
 import '../controllers/product_controller.dart';
 

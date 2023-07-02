@@ -3,6 +3,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
 import 'package:gap/gap.dart';
 
+import '../../controller/provider.dart';
 import '../../resourcce/theme_manager.dart';
 import '../../widgets/ads_banner_widget.dart';
 import '../../widgets/build_appbar.dart';
@@ -12,10 +13,6 @@ import '../../widgets/chip_widget.dart';
 import '../controllers/itembag_controller.dart';
 import '../controllers/product_controller.dart';
 import 'detail_page.dart';
-
-final currentIndexProvider = StateProvider<int>((ref) {
-  return 0;
-});
 
 class HomePage extends ConsumerWidget {
   const HomePage({super.key});
@@ -28,6 +25,7 @@ class HomePage extends ConsumerWidget {
     return Scaffold(
       appBar: buildAppBar(itemBag, context),
       drawer: buildDrawer(),
+      bottomNavigationBar: buildBottomNavigationBar(currentIndex, ref),
       body: SingleChildScrollView(
         child: Padding(
           padding: const EdgeInsets.all(25),
@@ -112,7 +110,6 @@ class HomePage extends ConsumerWidget {
           ),
         ),
       ),
-      bottomNavigationBar: buildBottomNavigationBar(currentIndex, ref),
     );
   }
 
